@@ -1,6 +1,14 @@
 from numpy import arange
+from pandas import DataFrame
 
 from card_deck import Card, Hand, CardDeck, Table
+
+
+def leaderboard(player_list: list):
+    d_players = {p.name: [p.hand.points] for p in player_list}
+    l = DataFrame.from_dict(d_players, orient='index', columns=['Score'])
+    l = l.sort_values('Score')
+    print(l)
 
 
 def valid_run(cards: list) -> bool:
@@ -193,3 +201,4 @@ if __name__ == '__main__':
     players = deck.deal(10, n_players)
     while not any([p.has_won for p in players]):
         pass  # play the game
+    leaderboard(players)
