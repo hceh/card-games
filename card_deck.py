@@ -99,9 +99,10 @@ class Player:
     generic player class
     """
 
-    def __init__(self, hand, name=None):
+    def __init__(self, hand, name: str = None, dealer: bool = False):
         self.hand = hand
         self.name = name
+        self.dealer = dealer
 
     def __repr__(self):
         return self.name
