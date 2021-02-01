@@ -199,7 +199,7 @@ class Table:
         else:
             return self.card_pile[-1]
 
-    def pickup_card(self):
+    def pick_up_card(self):
         """
         returns top card from discard pile if exists
         """
