@@ -48,3 +48,48 @@ class TestCardDeck(TestCase):
         #  card was in the deck
         #  card is no longer in deck
         self.fail()
+
+
+class TestHand(TestCase):
+
+    # todo: create test case of hand
+
+    def test_n_cards(self):
+        self.fail()
+
+    def test_show(self):
+        self.fail()
+
+    def test_organise_by_value(self):
+        self.fail()
+
+    def test_organise_by_suit(self):
+        self.fail()
+
+    def test_add_card(self):
+        self.fail()
+
+    def test_play_card(self):
+        self.fail()
+
+
+class TestTable(TestCase):
+
+    def test_creation(self):
+        t = Table()
+        self.assertListEqual(t.card_pile, list())
+
+    def test_n_cards(self):
+        self.fail()
+
+    def test_top_card(self):
+        # todo:
+        #  top card exists
+        #  no top card
+        self.fail()
+
+    def test_pick_up_card(self):
+        # todo:
+        #  if no card
+        #  if card, check returned and removed from card pile
+        self.fail()
