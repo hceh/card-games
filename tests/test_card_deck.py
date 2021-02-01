@@ -55,21 +55,23 @@ class TestHand(TestCase):
     # todo: create test case of hand
 
     def test_n_cards(self):
-        self.fail()
-
-    def test_show(self):
+        # todo: test on couple examples
         self.fail()
 
     def test_organise_by_value(self):
+        # todo: test on couple of examples
         self.fail()
 
     def test_organise_by_suit(self):
+        # todo: test on couple of examples
         self.fail()
 
     def test_add_card(self):
+        # todo: test card added to cards
         self.fail()
 
     def test_play_card(self):
+        # todo: test card is removed and returned
         self.fail()
 
 
