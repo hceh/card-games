@@ -1,7 +1,7 @@
 from numpy import arange
 from pandas import DataFrame
 
-from card_deck import Card, Hand, CardDeck, Table
+from src.card_deck import Card, Hand, CardDeck, Table
 
 
 def leaderboard(player_list: list):
